@@ -6,13 +6,22 @@ Logging the process, things, insights, etc.
 3. will make the app run on `http://localhost:3000`
 
 
-
 Configuring the sidebar, adding a new item
 1. i have added a new item to the sidebar, by adding a new `<SidebarItem` to the `./packages/app/src/components/Root/Root.tsx` file.
     the item is, where 'catalog-import' is the route that will be used to access the page: `<SidebarItem icon={AddCircleOutlineIcon} to="catalog-import" text="Create Catalog..." />`
 2. the icon is from `@material-ui/icons`, and it is the `AddCircleOutline` icon.
 
+Configuring the github auth provider
+on github
+1. create a new app in the github developer settings, and get the client id and secret.
+2. create a new personal access token in the github developer settings, and get the token.
 
+
+add the credentials to the `app-config.local.yaml` file. or the `app-config.yaml` file. see the example app-config.local.example file.
+on repo
+1. add the auth providers as github see the example app-config.local.example file.
+2. add the github provider in the ui, `packages/app/src/App.tsx`, component `SignInPage`
+3. added the custom auth provider in the backend, `packages/backend/src/index.ts`, function `createBackendModule`
 
 
 
