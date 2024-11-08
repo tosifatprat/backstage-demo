@@ -1,0 +1,17 @@
+Logging the process, things, insights, etc.
+
+
+1. run `npx @backstage/create-app@latest`
+2. run `yarn dev`
+3. will make the app run on `http://localhost:3000`
+
+
+
+Configuring the sidebar, adding a new item
+1. i have added a new item to the sidebar, by adding a new `<SidebarItem` to the `./packages/app/src/components/Root/Root.tsx` file.
+    `<SidebarItem icon={AddCircleOutlineIcon} to="catalog-import" text="Create Catalog..." />`
+
+
+
+
+
