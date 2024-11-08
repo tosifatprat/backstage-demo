@@ -9,7 +9,9 @@ Logging the process, things, insights, etc.
 
 Configuring the sidebar, adding a new item
 1. i have added a new item to the sidebar, by adding a new `<SidebarItem` to the `./packages/app/src/components/Root/Root.tsx` file.
-    `<SidebarItem icon={AddCircleOutlineIcon} to="catalog-import" text="Create Catalog..." />`
+    the item is, where 'catalog-import' is the route that will be used to access the page: `<SidebarItem icon={AddCircleOutlineIcon} to="catalog-import" text="Create Catalog..." />`
+2. the icon is from `@material-ui/icons`, and it is the `AddCircleOutline` icon.
+
 
 
 
