@@ -5,6 +5,7 @@ metadata:
     description: a documentation service
     annotations:
         backstage.io/techdocs-ref: dir:.
+        github.com/project-slug: orkohunter/pep8speaks
 spec:
     type: service
     lifecycle: production
