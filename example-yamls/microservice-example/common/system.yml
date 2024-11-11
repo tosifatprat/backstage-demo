@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: demo-system
-  description: Handy tools to keep artists in the loop
+  name: Payments
+  description: Handling Payments Projects
 spec:
   owner: pratishthangroup
   domain: pratishthanventures.com
