@@ -24,5 +24,10 @@ on repo
 3. added the custom auth provider in the backend, `packages/backend/src/index.ts`, function `createBackendModule`
 
 
+to enable techdocs
+1. add the annotations to the catalog-info.yaml file, `backstage.io/techdocs-ref: dir:.`
+2. add the docs folder to the component, and put the md files in it.
+3. for example, see the `service_with_docs` folder.
+
 
 
