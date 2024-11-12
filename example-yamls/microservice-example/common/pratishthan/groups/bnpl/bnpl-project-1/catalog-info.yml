@@ -16,13 +16,4 @@ metadata:
     title: Admin Dashboard
     icon: dashboard
     type: admin-dashboard
-spec:
-  type: service
-  lifecycle: production
-  owner: bnpl-group
-  system: bnpl
-  providesApis:
-  - bnpl-api-1
-  consumesApis:
-  - auth-service-api
-  dependsOn: [ bnpl-project-2 ]
+
