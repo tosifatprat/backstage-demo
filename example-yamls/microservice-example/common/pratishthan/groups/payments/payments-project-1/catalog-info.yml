@@ -7,8 +7,8 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: tosifatprat/payments-project-1
   tags:
-  - Javascript
-  - Node
+  - javascript
+  - node
   - psql
   links:
   - url: https://admin.example-org.com
