@@ -25,4 +25,4 @@ spec:
   - bnpl-api-1
   consumesApis:
   - auth-service-api
-  dependsOn: bnpl-project-2
+  dependsOn: [ bnpl-project-2 ]
