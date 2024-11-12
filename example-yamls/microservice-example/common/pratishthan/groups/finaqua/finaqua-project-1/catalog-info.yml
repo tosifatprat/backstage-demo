@@ -7,8 +7,8 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: tosifatprat/finaqua-project-1
   tags:
-  - Java
-  - Spark
+  - java
+  - spark
   - kafka
   - psql
   links:
