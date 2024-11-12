@@ -25,6 +25,4 @@ spec:
   - bnpl-api-1
   consumesApis:
   - auth-service-api
-  dependsOn:
-  - type: database
-    target: user_db
+  dependsOn: bnpl-project-2
