@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Pratishthan-group
+  description: pratishthan group for pratishthan
+spec:
+  type: team
+  profile:
+    displayName: pratishthan Group
+    email: pratishthan@pratishthanventures.com
+    picture: https://www.pratishthanventures.com/
+  parent: pratishthangroup
+  children: [bnpl-group, finaqua-group, payments-group, platform-eng-group]
+  members: [mem1,mem2]
