@@ -7,7 +7,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: tosifatprat/platform-project-1
   tags:
-  - Java
+  - java
 
   links:
   - url: https://admin.example-org.com
