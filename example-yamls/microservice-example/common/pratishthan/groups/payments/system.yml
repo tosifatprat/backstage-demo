@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: PratishthanVenturesGroup
-  description: Handling Pratishthan Ventures Projects
+  name: payments
+  description: Handling Payments Projects
 spec:
   owner: pratishthangroup
   domain: pratishthanventures.com

@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: deepak
+spec:
+  profile:
+    displayName: deepak
+    email: deepak@pratishthanventures.com
+    picture: https://wallpapers.com/wallpapers/coder-anonymous-mask-i68czmuweeutefmc.html
+  memberOf: [finaqua-group, employees]

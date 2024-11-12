@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: payments-group
+  description: payments group for pratishthan
+spec:
+  type: team
+  profile:
+    displayName: payments Group
+    email: payments@pratishthanventures.com
+    picture: https://www.pratishthanventures.com/
+  parent: pratishthangroup
+  children: [payments-project-1, payments-project-2, payments-project-3]
+  members: [abc, def]

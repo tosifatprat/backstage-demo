@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: finaqua-group
+  description: finaqua group for pratishthan
+spec:
+  type: team
+  profile:
+    displayName: finaqua Group
+    email: finaqua@pratishthanventures.com
+    picture: https://www.pratishthanventures.com/
+  parent: pratishthangroup
+  children: [finaqua-project-1, finaqua-project-2, finaqua-project-3]
+  members: [dheeraj, deepak]

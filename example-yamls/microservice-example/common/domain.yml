@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: PratishthanVenturesDomain
+  description: Handling Pratishthan Ventures Group Projects 
+spec:
+  owner: admin
+  subdomainOf: finance-domain

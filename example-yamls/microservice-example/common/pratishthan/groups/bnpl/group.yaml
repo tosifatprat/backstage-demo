@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: bnpl-group
+  description: bnpl group for pratishthan
+spec:
+  type: team
+  profile:
+    displayName: BNPL Group
+    email: bnpl@pratishthanventures.com
+    picture: https://www.pratishthanventures.com/
+  parent: pratishthangroup
+  children: [bnpl-project-1, bnpl-project-2, bnpl-project-3]
+  members: [mahi, krishna]
