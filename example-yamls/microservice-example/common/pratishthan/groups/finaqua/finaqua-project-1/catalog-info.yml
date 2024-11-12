@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: finaqua-project-1
+  description: A java jar
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: tosifatprat/finaqua-project-1
+  tags:
+  - Java
+  - Spark
+  - kafka
+  - psql
+  links:
+  - url: https://admin.example-org.com
+    title: Admin Dashboard
+    icon: dashboard
+    type: admin-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: finaqua-group
+  system: finaqua

@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: payments-project-1
+  description: A js project
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: tosifatprat/payments-project-1
+  tags:
+  - Javascript
+  - Node
+  - psql
+  links:
+  - url: https://admin.example-org.com
+    title: Admin Dashboard
+    icon: dashboard
+    type: admin-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: payments-group
+  system: payments

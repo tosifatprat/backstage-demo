@@ -10,5 +10,5 @@ spec:
     email: payments@pratishthanventures.com
     picture: https://www.pratishthanventures.com/
   parent: pratishthangroup
-  children: [platform-project-1,platform-project-2,platform-project-3]
-  members: [tosif, manasa]
+  children: [ platform-project-1 ]
+  members: [ tosif, manasa ]

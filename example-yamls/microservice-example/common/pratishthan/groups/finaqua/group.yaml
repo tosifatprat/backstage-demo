@@ -10,5 +10,5 @@ spec:
     email: finaqua@pratishthanventures.com
     picture: https://www.pratishthanventures.com/
   parent: pratishthangroup
-  children: [finaqua-project-1, finaqua-project-2, finaqua-project-3]
-  members: [dheeraj, deepak]
+  children: [ finaqua-project-1 ]
+  members: [ dheeraj, deepak ]

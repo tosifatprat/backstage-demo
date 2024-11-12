@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: Platform-eng
+  name: platform-eng
   description: Handling Platfrom engineering Projects
 spec:
   owner: pratishthangroup

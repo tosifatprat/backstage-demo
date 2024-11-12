@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bnpl-project-1
+  description: A java Library
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: tosifatprat/bnpl-project-1
+  tags:
+  - java
+  - springboot
+  - kafka
+  - psql
+  links:
+  - url: https://admin.example-org.com
+    title: Admin Dashboard
+    icon: dashboard
+    type: admin-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: bnpl-group
+  system: bnpl

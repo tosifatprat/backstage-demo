@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bnpl-project-2
+  description: A python Library
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: tosifatprat/bnpl-project-2
+  tags:
+  - python
+  - django
+  - kafka
+  - psql
+  links:
+  - url: https://admin.example-org.com
+    title: Admin Dashboard
+    icon: dashboard
+    type: admin-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: bnpl-group
+  system: bnpl
