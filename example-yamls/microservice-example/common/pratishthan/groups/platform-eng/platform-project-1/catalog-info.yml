@@ -8,8 +8,7 @@ metadata:
     github.com/project-slug: tosifatprat/platform-project-1
   tags:
   - Java
-  - Node
-  - Python
+
   links:
   - url: https://admin.example-org.com
     title: Admin Dashboard
