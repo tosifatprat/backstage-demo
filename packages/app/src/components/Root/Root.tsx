@@ -28,7 +28,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import { MyGroupsSidebarItem } from '@backstage/plugin-org';
 import GroupIcon from '@material-ui/icons/People';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
-
+import BuildIcon from '@material-ui/icons/Build';
 const useSidebarLogoStyles = makeStyles({
   root: {
     width: sidebarConfig.drawerWidthClosed,
@@ -82,6 +82,10 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         <SidebarScrollWrapper>
           {/* Items in this group will be scrollable if they run out of space */}
         </SidebarScrollWrapper>
+      </SidebarGroup>
+      <SidebarGroup label="Menu" icon={<MenuIcon />}>
+        <SidebarItem icon={BuildIcon} to="entity-validation" text="Validator" />
+        <SidebarDivider />
       </SidebarGroup>
       <SidebarSpace />
       <SidebarDivider />
