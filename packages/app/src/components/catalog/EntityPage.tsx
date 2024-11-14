@@ -53,7 +53,8 @@ import {
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
-
+// jenkins entity import
+import { EntityJenkinsContent } from '@backstage/plugin-jenkins';
 import {
   EntityKubernetesContent,
   isKubernetesAvailable,
@@ -172,6 +173,11 @@ const serviceEntityPage = (
           <EntityConsumedApisCard />
         </Grid>
       </Grid>
+    </EntityLayout.Route>
+
+    {/* jenking entity layout route */}
+    <EntityLayout.Route path="/jenkins" title="Jenkins">
+      <EntityJenkinsContent />
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/dependencies" title="Dependencies">
