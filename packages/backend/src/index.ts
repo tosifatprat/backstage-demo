@@ -119,8 +119,9 @@ const customAuth = createBackendModule({
 });
 
 // cookie cutter dependencies
-// backend.add(import('@backstage/plugin-scaffolder-backend'));
-// backend.add(import('@backstage/plugin-scaffolder-backend-module-cookiecutter'));
+
+backend.add(import('@backstage/plugin-scaffolder-backend-module-cookiecutter'));
+backend.add(import('@backstage/plugin-scaffolder-backend-module-github'));
 
 backend.add(customAuth);
 backend.start();

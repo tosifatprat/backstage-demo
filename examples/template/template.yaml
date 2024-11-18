@@ -41,11 +41,11 @@ spec:
     # Each step executes an action, in this case one templates files into the working directory.
     - id: fetch-base
       name: Fetch Base
-      action: fetch:template
+      action: fetch:cookiecutter
       input:
         url: ./content
         values:
-          name: ${{ parameters.name }}
+          project_name: ${{ parameters.name }}
 
     # This step publishes the contents of the working directory to GitHub.
     - id: publish
