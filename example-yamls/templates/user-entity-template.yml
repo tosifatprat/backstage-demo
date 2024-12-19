@@ -1,0 +1,104 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: create-user-entity
+  title: Create User Entity
+  description: A template for creating new user entities in Backstage.
+spec:
+  type: service
+  owner: team-a
+  parameters:
+    - title: User Information
+      required:
+        - username
+        - displayName
+        - email
+        - repoUrl
+      properties:
+        username:
+          type: string
+          title: Username (e.g., johndoe)
+          default: tosif
+        displayName:
+          type: string 
+          title : Display Name (e.g., John Doe)
+          default: tosif
+        email :
+          type : string 
+          format : email 
+          title : Email Address
+          default: tosif.khan@pratishthanventures.com
+        repoUrl:
+          type: string
+          format: string
+          title: repo url
+          default: https://github.com/tosifatprat/backstage-demo
+    # - title: Checkin Information
+    #   required:
+    #     - name
+    #     - repoUrl
+    #   properties:
+    #     name:
+    #       type: string
+    #       title: repo-name (e.g., repo-name)
+    #     repoUrl:
+    #       type: string 
+    #       title : repo-url
+  
+  steps:
+    - id: fetch-base
+      name: Fetch Base
+      action: fetch:template
+      input:
+        url: ./user-entity.yml
+        values:
+          name: ${{ parameters.username }}
+          email: ${{ parameters.email }}
+          displayName: ${{ parameters.displayName }}
+
+    - action: debug:log
+      id: write-debug-line
+      name: Write "Hello Backstage!" log line
+      input:
+        listWorkspace: with-contents
+        message: HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+    - name: Write Catalog information
+      action: catalog:write
+      input:
+        entity:
+          apiVersion: 'backstage.io/v1alpha1'
+          kind: User
+          metadata:
+            name: '{{ user.name }}'
+          spec:
+            profile:
+              displayName: '{{ user.name }}'
+              email: '{{ user.email }}'
+
+    - id: debug-repo-url
+      name: Debug Repo URL
+      action: debug:log
+      input:
+        message: 'Repo URL: ${{ parameters.repoUrl }}'
+    - id: publish
+      name: Publish
+      action: publish:github
+      input:
+        allowedHosts:
+          - github.com
+        description: This is ${{ parameters.name }}
+        repoUrl: ${{ parameters.repoUrl }}
+    - id: register
+      name: Register
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps['publish'].output.repoContentsUrl }}
+        catalogInfoPath: '/catalog-info.yaml'
+    
+  output:
+    links:
+      - title: Repository
+        url: ${{ steps['publish'].output.remoteUrl }}
+      - title: Open in catalog
+        icon: catalog
+        entityRef: ${{ steps['register'].output.entityRef }}
