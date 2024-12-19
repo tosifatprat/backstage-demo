@@ -6,3 +6,4 @@ spec:
   profile:
     displayName: '{{ user.name }}'
     email: '{{ user.email }}'
+  memberOf: [finaqua-group, employees]
